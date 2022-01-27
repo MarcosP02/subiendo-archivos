@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: rgb(203, 248, 3);
+}
+.grid{
+    height: 100vh;
+    display: grid;
+ 
+    grid-template-areas:
+                          "header header"
+                          " nav     nav "
+                         "main main  "
+                         "section1 section2"                        
+                         "footer footer ";
+                         
+
+}      
+                            
+header{
+    background-color: cornsilk;
+grid-area: header;
+text-align: center;
+padding: 20px;
+
+
+}
+nav ul{
+
+
+color: rgb(233, 95, 16);
+grid-area: nav ;
+display: flex;
+padding: 20px;
+list-style: none;
+    justify-content: center;
+
+    }
+    nav li{
+        padding: 20px;
+        text-decoration: none;
+    max-width: auto auto;
+
+        display: flex;
+        background-color: rgb(12, 231, 247);
+    
+    }
+
+
+    main{
+        background-color: burlywood;
+        grid-area: main;
+        border: 2px solid;
+        padding: 5px;
+        
+    }
+
+    .section1{
+        background-color: chocolate;
+        grid-area: section1;
+        border: 5px solid;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px;
+    }
+    .img1none{
+        width: 30%;
+     justify-content: end;
+     
+    }
+    .h2section1{
+        font-size: 20px;
+       text-align: center;
+       padding: 10px;
+       }
+       .psection1{
+           font-size: medium;
+   
+       }
+    .section2{
+        text-align: center;
+        background-color: coral;
+        grid-area: section2;
+        border: 5px solid;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+    }
+  
+    .img2none{
+     width: 50%;
+    }
+
+    footer{
+    color: darkgray;
+        grid-area: footer;
+        text-align: center;
+        background-color: darkgoldenrod;    
+    }
+    /* media queries*/
+
+
+
+    @media screen and (max-width: 390px) 
+
+    {
+        body{
+            background-color: rgb(66, 3, 238);
+        }
+
+        header{
+            color: rgb(76, 80, 80);
+            margin-bottom: 5px;         border-radius: 5px;
+            text-align: center;
+            display: grid;
+            grid-template-rows: auto auto ;
+        }
+        
+     nav{
+        margin: 0 0 0 50px;
+        
+        
+     }
+     main{
+         display: grid;
+         grid-template-columns: auto auto;
+     }
+    .img1none{
+       width: 100px;
+       margin: 10px 0 0 70px;
+       display: none;
+    }
+    .img2none{
+        width: 200px;
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 1024px)
+
+ {
+     body{
+         background-color: rgb(163, 42, 66);
+     }
+
+     header{
+         color: rgb(42, 0, 139);
+         padding: 20px;
+         border: 10px solid coral;
+         border-radius: 100px;
+     }
+     nav{
+        margin: 0 0 0 50px;
+        
+        
+     }
+     main{
+        border: coral;
+        border-radius: 50px;
+    }
+    
+    .h2section1{
+        font-family: cursive;
+    }
+   
+    .psection1{
+        color: cornsilk;
+       font-family: Arial, Helvetica, sans-serif;
+    }
+    H3{
+        color: darkblue;
+    }
+    .psection2{
+        color: cornsilk;
+        font-family: sans-serif;
+    }
+}
